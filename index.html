@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,25 @@
     <link rel="stylesheet" href="index.css">
     <title>Alura reto 2</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="./imagenes/logoahorcado.png" alt="logo del juego del ahorcado" id="logo" />
+        <div class="contenedor-titulo">
+            <h1 class="titulo">Juego del ahorcado</h1>
+        </div>
+    </header>
+    <main>
+        <h1 class="finalizacion oculto"></h1>
+        <canvas id="tutorial" width="300px" height="300px" class="oculto"></canvas>
+        <div class="contenedor-boton">
+            <button class="custom-btn btn-9">Ingresa</button>
+        </div>
+        <div class="letrasUsadas oculto">
+            <textarea name="usadas" id="letrasUsadas" cols="30" rows="10" class="usadas"></textarea>
+        </div>
+    </main>
 </body>
 <script src="./index.js"></script>
+
 </html>
