@@ -24,17 +24,36 @@ header {
 }
 main {
   height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "final final final final"
+    "canvas canvas letras letras";
 }
-
-#contenedor-boton {
+canvas {
+  grid-area: canvas;
+  padding: 5px;
+  margin: 30px auto;
+}
+.finalizado {
+  grid-area: final;
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+}
+.oculto {
+  display: none;
+}
+#letrasUsadas {
+  grid-area: letras;
   width: 80%;
-  margin: 250px auto;
+  border: 1px solid white;
+  margin: auto;
+}
+#contenedor-boton {
   grid-area: boton;
   display: flex;
   align-items: center;
-}
-a {
-  margin: 0 auto;
 }
 .custom-btn {
   width: 130px;

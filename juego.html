@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="juego.css">
     <title>Alura reto 2</title>
 </head>
 
@@ -18,10 +18,14 @@
         </div>
     </header>
     <main>
-        <div id="contenedor-boton">
-            <a href="./juego.html"><button class="custom-btn btn-9">Ingresar</button></a>
+        <h1 class="oculto" id="finalizacion"></h1>
+        <canvas id="tutorial" width="300px" height="300px"></canvas>
+        <div id="letrasUsadas">
+            <textarea name="usadas" id="acumular-letras" cols="30" rows="10" class="usadas" disabled></textarea>
         </div>
     </main>
 </body>
+<script src="./index.js"></script>
+<script src="./canvas.js"></script>
 
 </html>
