@@ -35,15 +35,13 @@ canvas {
   padding: 5px;
   margin: 30px auto;
 }
-.finalizado {
+#finalizacion {
   grid-area: final;
   text-align: center;
   font-size: 4em;
   font-weight: bold;
 }
-.oculto {
-  display: none;
-}
+
 #letrasUsadas {
   grid-area: letras;
   width: 80%;

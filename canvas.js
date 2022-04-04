@@ -57,6 +57,6 @@ function generadorCanvas(contador) {
       ctx.fill(); //fin de brazo derecho
       break;
     default:
-      console.log("acertaste");
+      console.log("Perdiste");
   }
 }
