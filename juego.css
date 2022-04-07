@@ -28,6 +28,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     "final final final final"
+    "palabra palabra palabra palabra"
     "canvas canvas letras letras";
 }
 canvas {
@@ -106,4 +107,25 @@ button {
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+.palabra{
+  grid-area: palabra;
+  display: flex;
+  justify-content: center;
+}
+.palabra-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.palabra-lista-elemento{
+  width: 25px;
+  height: 40px;
+  font-size: 2em;
+  padding: 5px;
+  margin-right: 5px;
+  border-bottom: 2px solid black;
+  text-align: center;
 }
